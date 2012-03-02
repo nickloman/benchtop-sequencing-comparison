@@ -1,0 +1,18 @@
+#Name	Path	Desc	AssemblySoftware
+454Junior-1-newbler	assemblies/newbler/454Junior-1.fna	454 GS Junior (1)	Newbler
+454Junior-2-newbler	assemblies/newbler/454Junior-2.fna	454 GS Junior (2)	Newbler
+454Junior-both-newbler	assemblies/newbler/454-Junior-1+2.fna	454 GS Junior (1+2)	Newbler
+IonTorrent-1-newbler	assemblies/newbler/IonTorrent-1.fna	Ion Torrent PGM (1)	Newbler
+IonTorrent-2-newbler	assemblies/newbler/IonTorrent-2.fna	Ion Torrent PGM (2)	Newbler
+IonTorrent-both-newbler	assemblies/newbler/IonTorrent-1+2.fna	Ion Torrent PGM (1+2)	Newbler
+454Junior-2-mira	assemblies/mira/454Junior-2_out.unpadded.fasta	454 GS Junior (2)	MIRA
+454Junior-both-mira	assemblies/mira/454Junior-both_out.unpadded.fasta	454 GS Junior (1+2)	MIRA
+454Junior-1-mira	assemblies/mira/454Junior-1_out.unpadded.fasta	454 GS Junior (1)	MIRA
+IonTorrent-1-mira	assemblies/mira/IonTorrent-1_out.unpadded.fasta	Ion Torrent PGM (1)	MIRA
+IonTorrent-both-mira	assemblies/mira/IonTorrent-both_out.unpadded.fasta	Ion Torrent PGM (1+2)	MIRA
+IonTorrent-2-mira	assemblies/mira/IonTorrent-2_out.unpadded.fasta	Ion Torrent PGM (2)	MIRA
+MiSeq-280-contigs-mira	assemblies/mira/MiSeq-1_out.unpadded.fasta	MiSeq (contigs)	MIRA
+MiSeq-280-contigs-velvet	assemblies/velvet/MiSeq-280-contigs.fna	MiSeq (contigs)	Velvet
+MiSeq-280-scaffolds-velvet	assemblies/velvet/MiSeq-280-scaffolds.fna	MiSeq (scaffolds)	Velvet
+MiSeq-280-contigs.clc.fasta	assemblies/clc/MiSeq-280-contigs.clc.fasta	MiSeq (contigs)	CLC
+MiSeq-280-scaffolds.clc.fasta	assemblies/clc/MiSeq-280-scaffolds.clc.fasta	MiSeq (scaffolds)	CLC

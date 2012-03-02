@@ -24,8 +24,12 @@ def go(assembly_fn, gap_fn, out_gap_fn):
 	outfh = open(out_gap_fn, "w")
 
 	asshash = {}
-	for rec in SeqIO.parse(open(assembly_fn), "fasta"):
-		asshash[rec.id] = rec
+	try:
+		for rec in SeqIO.parse(open(assembly_fn), "fasta"):
+			asshash[rec.id] = rec
+	except:
+		for rec in SeqIO.parse(open(assembly_fn + '.fas'), "fasta"):
+			asshash[rec.id] = rec
 
 	stati = defaultdict(int)
 	homopolymers = defaultdict(int)
@@ -87,7 +91,7 @@ def go(assembly_fn, gap_fn, out_gap_fn):
 #	return stati, homopolymers
 	return results
 
-print "assembly\tgaptype\thplen"
+print "assembly\tassembler\tgaptype\thplen"
 for a in assemblies:
 	dirname = a['Name'] + '_scores'
 	gapfile = glob.glob("%s/*__gaps.txt" % (dirname,))
@@ -96,14 +100,14 @@ for a in assemblies:
 	m = re.search('(\d+)', os.path.basename(gapfile[0]))
 	alignment_number = m.group(1)
 
-	assembly_fn = "%s/alignment%s/%s.fas" % (dirname, alignment_number, a['Name'])
+	assembly_fn = "%s/alignment%s/%s" % (dirname, alignment_number, a['Name'])
 	gap_fn = "%s/alignment%s__gaps.txt" % (dirname, alignment_number)
 	out_gap_fn = "%s/gaps.txt" % (dirname,)
 
 #	stati, homopolymers = go(assembly_fn, gap_fn, out_gap_fn)
 	results = go(assembly_fn, gap_fn, out_gap_fn)
 	for cols in results:
-		print "\t".join([str(x) for x in [a['Desc'], cols[14], cols[16]]])
+		print "\t".join([str(x) for x in [a['Desc'], a['AssemblySoftware'], cols[14], cols[16]]])
 
 #	for status, value in stati.iteritems():
 #		print "%s\tcategory\t%s\t%s" % (a['Name'], status, value)

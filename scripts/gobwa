@@ -1,0 +1,20 @@
+#!/bin/bash
+tag=$1
+reads=$2
+ref=$3
+threads=8
+bwa bwasw -t $threads $ref $reads -f $tag.sam
+samtools view -bS $tag.sam > $tag.bam
+rm $tag.sam
+samtools calmd -eb $tag.bam $ref > $tag.calmd.bam
+rm $tag.bam
+samtools sort $tag.calmd.bam $tag.sorted
+rm $tag.calmd.bam
+samtools index $tag.sorted.bam
+
+#java -Xmx2g -jar /mnt/safe/results/nick/benchtop/bin/picard-tools-1.56/AddOrReplaceReadGroups.jar INPUT=$tag.sorted.bam OUTPUT=$tag_rg.sorted.bam RGID=1 PL=LS454 LB=280 SM=BHAM5 RGPU=0
+#samtools index $tag_rg.sorted.bam
+#java -Xmx2g -jar /mnt/safe/results/nick/benchtop/bin/GenomeAnalysisTK-1.2-65-ge4a583a/GenomeAnalysisTK.jar -R $ref -T DepthOfCoverage -I $tag_rg.sorted.bam --log_to_file logfile -l ERROR --outputFormat rtable > $tag.coverage.txt
+#head -n -9 $tag.coverage.txt > $tag.coverage.txt.R
+#./covg.R $tag.coverage.txt.R > $tag.coverage.txt.R.stats
+#python ../../../bin/read_bam.py $tag.sorted.bam > $tag.indels

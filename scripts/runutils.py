@@ -6,7 +6,7 @@ class Stats:
         self.contig_lengths = contig_lengths
         self.n_vals = n_vals
 
-def get_stats(run):
+def get_stats(run, total = 0):
     if run['Tech'] == '454':
         format = 'sff'
     else:
@@ -21,7 +21,9 @@ def get_stats(run):
 
     n_vals = {0.5 : 0, 0.75 : 0, 0.9 : 0}
 
-    total = sum(contig_lengths)
+    if not total:
+        total = sum(contig_lengths)
+
     for key in n_vals.keys():
         l = 0
         for n in contig_lengths:

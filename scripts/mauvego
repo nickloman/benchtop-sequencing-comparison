@@ -1,0 +1,9 @@
+#!/bin/bash -vx
+tag=$1
+ref=$2
+qry=$3
+
+rm -rf ${tag}_scores
+java -cp ../mauve_snapshot_2011-08-19/Mauve.jar org.gel.mauve.assembly.ScoreAssembly -reference $ref -assembly $qry -reorder ${tag}_scores -outputDir ${tag}_scores 
+
+

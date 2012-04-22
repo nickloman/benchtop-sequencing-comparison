@@ -16,8 +16,9 @@ observed_quality_plot <- function(fn, title, lm) {
 	b<-b[b$matches > 1000,]
 	accuracy<-accuracy[accuracy$matches > 1000,]
 	print("plotting")
+	# geom_smooth
 	p<-ggplot(b, aes(x=pos, y=qual)) +
-		geom_line(aes(linetype="Measured")) + geom_smooth() + 
+		geom_line(aes(linetype="Measured")) +
 		geom_line(data = accuracy, aes(x=pos, y=eaccuracy, linetype="Expected")) +
 		scale_x_continuous("Base Position", limits=c(0,lm)) +
 		scale_y_continuous("Accuracy (%)", limits=c(95,100)) +
@@ -89,7 +90,10 @@ doplot_qrqc <- function(fn, qual, ylim, maxlength) {
 
 seqlenplot_qrqc <- function(fn, qual, ylim, maxlength) {
 	fq<-readSeqFile(fn, quality=qual, hash=FALSE, max.length=maxlength)
-	seqlenPlot(fq) + scale_y_continuous("Density") + scale_x_continuous("Read length", limits=c(0,ylim))
+	sl <- getSeqlen(fq)
+	sl$density <- sl$count/sum(sl$count)
+	# ggplot(sl) + geom_bar(aes(x=length, y=density), stat="identity") + scale_y_continuous("Density") + scale_x_continuous("Read length", limits=c(0,ylim))
+	seqlenPlot(fq) + scale_y_continuous("Number") + scale_x_continuous("Read length", limits=c(0,ylim))
 }
 
 pdf("fig1_panelA.pdf", width=20, height=26)

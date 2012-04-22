@@ -1,0 +1,36 @@
+
+This Github repository is intended to complement the publication:
+
+Loman NJ, et al.  Performance comparison of bench-top sequencing
+instruments. Nature Biotechnology. 2012 (In Press)
+
+At the moment it contains the scripts used to produce tables and
+figures in the paper, as well as the variety of assemblies
+produced.
+
+Guide to directories:
+
+ analysis/    - Scripts to generate figures and tables.
+
+ annotations/ - E. coli strain 280 reference annotation (Gbk
+                format)
+
+ assemblies/  - Draft assemblies from benchtop data
+
+ scripts/     - Repository of scripts used for analysis.
+
+My intention is to update this repository and make it easy to
+reproduce the full range of analysis done for this article, and
+for others to use the scripts for their own analysis. Please
+use the Github "watch" facility if you wish to track these updates.
+
+Currently due to Github space limitations, the sequence files
+are available via the SRA. I plan to write a Makefile which can
+extract them automatically into the workspace.
+
+
+-- Nick Loman, 22nd April 2012 (n.j.loman@bham.ac.uk)
+
+
+
+

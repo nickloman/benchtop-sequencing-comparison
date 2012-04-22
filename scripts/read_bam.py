@@ -10,15 +10,15 @@ reference = dict([(rec.id, rec) for rec in SeqIO.parse(sys.argv[2], "fasta")])
 def has_masked(s):
         return len([c for c in s if c.islower()])
 
-mapped = 0
-unmapped = 0
-
 MINIMUM_MAPPING_QUALITY = 1
 
 print "sample\tref\trid\tmapped\tmapq\tinsertions\tl_insertions\tdeletions\tl_deletions\trlen"
 
 samples = read_run_details(sys.argv[1])
 for sample in samples:
+	mapped = 0
+	unmapped = 0
+
 	samfile = pysam.Samfile(sample['Path'], "rb")
 	id = 1
 	for read in samfile:

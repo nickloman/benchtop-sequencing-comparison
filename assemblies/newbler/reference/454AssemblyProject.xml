@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<FourFiveFourProject>
+
+  <ProjectInformation>
+    <ProjectType>Assembly</ProjectType>
+    <ProjectDirectory>/home/nick/benchtop/data/assemblies/newbler_454_just_long</ProjectDirectory>
+    <dateCreated>Wed Aug 17 11:22:58 2011</dateCreated>
+    <dateModified>Tue Sep 20 12:01:06 2011</dateModified>
+    <SoftwareVersion>2.6 (20110517_1502)</SoftwareVersion>
+  </ProjectInformation>
+
+  <Config>
+    <minimumReadLength>20</minimumReadLength>
+    <overlapSeedStep>12</overlapSeedStep>
+    <overlapSeedLength>16</overlapSeedLength>
+    <overlapMinSeedCount>1</overlapMinSeedCount>
+    <overlapSeedHitLimit>70</overlapSeedHitLimit>
+    <overlapHitPositionLimit>1000000</overlapHitPositionLimit>
+    <overlapMinMatchLength>40</overlapMinMatchLength>
+    <overlapMinMatchIdentity>90</overlapMinMatchIdentity>
+    <overlapMatchIdentScore>2</overlapMatchIdentScore>
+    <overlapMatchDiffScore>-3</overlapMatchDiffScore>
+    <overlapMatchUniqueThresh>12</overlapMatchUniqueThresh>
+    <isogroupThresh>500</isogroupThresh>
+    <isotigThresh>100</isotigThresh>
+    <isotigContigCountThresh>100</isotigContigCountThresh>
+    <isotigContigLengthThresh>3</isotigContigLengthThresh>
+    <aceMode>Auto</aceMode>
+    <aceReadMode>Default</aceReadMode>
+    <pairAlignMode>None</pairAlignMode>
+    <alignInfoMode>Auto</alignInfoMode>
+    <mapMinContigDepth>1</mapMinContigDepth>
+    <allContigThresh>100</allContigThresh>
+    <largeContigThresh>500</largeContigThresh>
+    <expectedDepth>0</expectedDepth>
+    <cDNAMode>false</cDNAMode>
+    <referenceMode>Auto</referenceMode>
+    <largeGenome>false</largeGenome>
+    <ripMode>true</ripMode>
+    <heterozygoteMode>false</heterozygoteMode>
+    <assemblerBatchSize>0</assemblerBatchSize>
+    <numCPU>1</numCPU>
+    <showSingleReadVariations>false</showSingleReadVariations>
+    <nimblegenMappingMode>false</nimblegenMappingMode>
+    <backwardCompatibleContigging>false</backwardCompatibleContigging>
+    <finishMode>false</finishMode>
+    <autoTrimming>true</autoTrimming>
+    <VectorDatabase/>
+    <screeningDatabase/>
+    <haplotypeFile/>
+    <targetedRegionFile/>
+    <annotationFile/>
+    <knownSNPFile/>
+    <accessionRenameFile/>
+    <filterExcludeFile/>
+    <filterIncludeFile/>
+    <UseSerialIO>true</UseSerialIO>
+    <SerialIOMinimizeDisk>false</SerialIOMinimizeDisk>
+    <SerialIOMemLimit>28</SerialIOMemLimit>
+  </Config>
+
+  <ReferenceFiles>
+    <SetRefCount>0</SetRefCount>
+  </ReferenceFiles>
+
+  <ReadFiles>
+    <SetReadCount>2</SetReadCount>
+    <File>
+      <SFFDirFilename>280_30x.sff</SFFDirFilename>
+      <Path>/home/nick/benchtop/data/reads/hpa/280/280_30x.sff</Path>
+      <Type>SFF</Type>
+      <IsPairedEnd>false</IsPairedEnd>
+      <Rescore>false</Rescore>
+      <removeFlag>false</removeFlag>
+    </File>
+    <File>
+      <SFFDirFilename>454_titanium_pe_reads.sff</SFFDirFilename>
+      <Path>/home/nick/benchtop/data/reads/hpa/280/454_titanium_pe_reads.sff</Path>
+      <Type>SFF</Type>
+      <IsPairedEnd>true</IsPairedEnd>
+      <Rescore>false</Rescore>
+      <removeFlag>false</removeFlag>
+    </File>
+  </ReadFiles>
+
+</FourFiveFourProject>

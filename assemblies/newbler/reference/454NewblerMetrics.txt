@@ -1,0 +1,358 @@
+/***************************************************************************
+**
+**      454 Life Sciences Corporation
+**         Newbler Metrics Results
+**
+**      Date of Assembly: 2011/09/20 12:01:08
+**      Project Directory: /home/nick/benchtop/data/assemblies/newbler_454_just_long
+**      Software Release: 2.6 (20110517_1502)
+**
+***************************************************************************/
+
+/*
+**  Input information.
+*/
+
+runData
+{
+	file
+	{
+		path = "/home/nick/benchtop/data/reads/hpa/280/280_30x.sff";
+
+		numberOfReads = 218661, 218657;
+		numberOfBases = 154645861, 153966950;
+	}
+
+}
+
+pairedReadData
+{
+	file
+	{
+		path = "/home/nick/benchtop/data/reads/hpa/280/454_titanium_pe_reads.sff";
+
+		numberOfReads = 73968, 147936;
+		numberOfBases = 27876872, 24723978;
+		numWithPairedRead = 73968;
+	}
+
+}
+
+/*
+**  Operation metrics.
+*/
+
+runMetrics
+{
+	inputFileNumReads  = 292629; 
+	inputFileNumBases  = 182522733; 
+
+	totalNumberOfReads = 366593; 
+	totalNumberOfBases = 178699489; 
+
+	numberSearches   = 78480;
+	seedHitsFound    = 18484053, 235.53;
+	overlapsFound    = 1690997, 21.55, 9.15%;
+	overlapsReported = 1636084, 20.85, 96.75%;
+	overlapsUsed     = 800832, 10.20, 48.95%;
+}
+
+readAlignmentResults
+{
+	file
+	{
+		path = "/home/nick/benchtop/data/reads/hpa/280/280_30x.sff";
+
+		numAlignedReads     = 217460, 99.45%;
+		numAlignedBases     = 153247803, 99.53%;
+		inferredReadError  = 0.76%, 1170370;
+	}
+
+}
+
+pairedReadResults
+{
+	file
+	{
+		path = "/home/nick/benchtop/data/reads/hpa/280/454_titanium_pe_reads.sff";
+
+		numAlignedReads     = 145524, 98.37%;
+		numAlignedBases     = 24528162, 99.21%;
+		inferredReadError  = 0.98%, 239253;
+
+		numberWithBothMapped  = 71607;
+		numWithOneUnmapped    = 208;
+		numWithMultiplyMapped = 2150;
+		numWithBothUnmapped   = 3;
+	}
+
+}
+
+/*
+** Consensus distribution information.
+*/
+consensusDistribution
+{
+	fullDistribution
+	{
+		signalBin =  0.0, 353306;
+		signalBin =  0.5, 2;
+		signalBin =  0.6, 16;
+		signalBin =  0.7, 126;
+		signalBin =  0.8, 57281;
+		signalBin =  0.9, 1820938;
+		signalBin =  1.0, 1106376;
+		signalBin =  1.1, 13223;
+		signalBin =  1.2, 111;
+		signalBin =  1.3, 13;
+		signalBin =  1.4, 5;
+		signalBin =  1.5, 13;
+		signalBin =  1.6, 116;
+		signalBin =  1.7, 3744;
+		signalBin =  1.8, 96543;
+		signalBin =  1.9, 518237;
+		signalBin =  2.0, 185227;
+		signalBin =  2.1, 2706;
+		signalBin =  2.2, 29;
+		signalBin =  2.3, 7;
+		signalBin =  2.4, 3;
+		signalBin =  2.5, 10;
+		signalBin =  2.6, 72;
+		signalBin =  2.7, 1594;
+		signalBin =  2.8, 25881;
+		signalBin =  2.9, 116788;
+		signalBin =  3.0, 48373;
+		signalBin =  3.1, 1283;
+		signalBin =  3.2, 16;
+		signalBin =  3.4, 3;
+		signalBin =  3.5, 9;
+		signalBin =  3.6, 56;
+		signalBin =  3.7, 848;
+		signalBin =  3.8, 7538;
+		signalBin =  3.9, 24121;
+		signalBin =  4.0, 17806;
+		signalBin =  4.1, 1963;
+		signalBin =  4.2, 50;
+		signalBin =  4.4, 3;
+		signalBin =  4.5, 11;
+		signalBin =  4.6, 31;
+		signalBin =  4.7, 200;
+		signalBin =  4.8, 1400;
+		signalBin =  4.9, 6355;
+		signalBin =  5.0, 7884;
+		signalBin =  5.1, 1020;
+		signalBin =  5.2, 30;
+		signalBin =  5.3, 2;
+		signalBin =  5.4, 4;
+		signalBin =  5.5, 10;
+		signalBin =  5.6, 60;
+		signalBin =  5.7, 152;
+		signalBin =  5.8, 593;
+		signalBin =  5.9, 1561;
+		signalBin =  6.0, 1958;
+		signalBin =  6.1, 646;
+		signalBin =  6.2, 43;
+		signalBin =  6.3, 5;
+		signalBin =  6.4, 2;
+		signalBin =  6.5, 12;
+		signalBin =  6.6, 29;
+		signalBin =  6.7, 72;
+		signalBin =  6.8, 230;
+		signalBin =  6.9, 384;
+		signalBin =  7.0, 391;
+		signalBin =  7.1, 142;
+		signalBin =  7.2, 24;
+		signalBin =  7.3, 4;
+		signalBin =  7.4, 5;
+		signalBin =  7.5, 4;
+		signalBin =  7.6, 10;
+		signalBin =  7.7, 22;
+		signalBin =  7.8, 64;
+		signalBin =  7.9, 72;
+		signalBin =  8.0, 55;
+		signalBin =  8.1, 29;
+		signalBin =  8.3, 1;
+		signalBin =  8.4, 1;
+		signalBin =  8.5, 3;
+		signalBin =  8.6, 3;
+		signalBin =  8.7, 8;
+		signalBin =  8.8, 8;
+		signalBin =  8.9, 4;
+		signalBin =  9.0, 3;
+		signalBin =  9.2, 1;
+		signalBin =  9.3, 1;
+		signalBin =  9.4, 1;
+		signalBin =  9.8, 1;
+		signalBin = 10.0, 1;
+		signalBin = 11.3, 1;
+	}
+
+	distributionPeaks
+	{
+		signalPeak = 1, 0.98;
+		signalPeak = 2, 1.96;
+		signalPeak = 3, 2.96;
+		signalPeak = 4, 3.96;
+		signalPeak = 5, 5.00;
+		signalPeak = 6, 6.00;
+		signalPeak = 7, 6.98;
+	}
+
+	thresholdsUsed
+	{
+		threshold = 0, 1, 0.48;
+		threshold = 1, 2, 1.44;
+		threshold = 2, 3, 2.46;
+		threshold = 3, 4, 3.40;
+		threshold = 4, 5, 4.38;
+		threshold = 5, 6, 5.38;
+		threshold = 6, 7, 6.42;
+
+		interpolationAmount = 0.99;
+	}
+}
+
+
+/*
+**  Alignment depths.
+*/
+alignmentDepths
+{
+	      1 = 12646;
+	      2 = 9295;
+	    3-4 = 18177;
+	    5-6 = 14945;
+	    7-8 = 14977;
+	   9-10 = 18688;
+	  11-13 = 58406;
+	  14-16 = 136708;
+	  17-19 = 317177;
+	  20-22 = 555621;
+	  23-25 = 779271;
+	  26-28 = 899800;
+	  29-31 = 886204;
+	  32-34 = 755910;
+	  35-38 = 694057;
+	  39-42 = 388952;
+	  43-46 = 192496;
+	  47-50 = 74223;
+	  51-55 = 27264;
+	  56-60 = 8666;
+	  61-70 = 6933;
+	  71-80 = 4412;
+	  81-90 = 6869;
+	 91-100 = 11813;
+	101-140 = 88015;
+	141-180 = 95818;
+	181-240 = 25615;
+	241-300 = 1331;
+	301-400 = 373;
+	401-500 = 0;
+	501-600 = 0;
+	601-700 = 0;
+	701-850 = 0;
+	851-1000 = 0;
+	  1001+ = 0;
+
+	peakDepth            = 28.0;
+	estimatedGenomeSize  = "6.4 MB";
+}
+
+/*
+**  Consensus results.
+*/
+consensusResults
+{
+	readStatus
+	{
+		numAlignedReads    = 362984, 99.02%;
+		numAlignedBases    = 177775965, 99.49%;
+		inferredReadError = 0.79%, 1409623;
+
+		numberAssembled = 356536;
+		numberPartial   = 6448;
+		numberSingleton = 317;
+		numberRepeat    = 2947;
+		numberOutlier   = 345;
+		numberTooShort  = 0;
+	}
+
+	pairedReadStatus
+	{
+		numberWithBothMapped   = 71607;
+		numberWithOneUnmapped  = 208;
+		numberMultiplyMapped   = 2150;
+		numberWithBothUnmapped = 3;
+
+		library
+		{
+			libraryName       = "454_titanium_pe_reads.sff";
+			libraryNumPairs   = 73968;
+			numInSameScaffold = 67281, 91.0%;
+
+			pairDistanceRangeUsed      = 3878..11636;
+			computedPairDistanceAvg    = 7757.4;
+			computedPairDistanceDev    = 1939.3;
+		}
+	}
+
+	scaffoldMetrics
+	{
+		numberOfScaffolds   = 9;
+		numberOfBases       = 5521224;
+
+		avgScaffoldSize     = 613469;
+		N50ScaffoldSize     = 5340015, 1;
+		largestScaffoldSize = 5340015;
+
+		numberOfScaffoldContigs     = 127;
+		numberOfScaffoldContigBases = 5509306;
+
+		avgScaffoldContigSize       = 43380;
+		N50ScaffoldContigSize       = 124176, 14;
+		largestScaffoldContigSize   = 387265;
+
+		scaffoldEndMetrics
+		{
+			NoEdges   = 18, 100.0%;
+			OneEdge   = 0, 0.0%;
+			TwoEdges  = 0, 0.0%;
+			ManyEdges = 0, 0.0%;
+		}
+
+		scaffoldGapMetrics
+		{
+			BothNoEdges   = 118, 100.0%;
+			OneNoEdges    = 0, 0.0%;
+			BothOneEdge   = 0, 0.0%;
+			MultiEdges    = 0, 0.0%;
+		}
+	}
+
+	largeContigMetrics
+	{
+		numberOfContigs   = 124;
+		numberOfBases     = 5474894;
+
+		avgContigSize     = 44152;
+		N50ContigSize     = 124176;
+		largestContigSize = 387265;
+
+		Q40PlusBases      = 5464502, 99.81%;
+		Q39MinusBases     = 10392, 0.19%;
+
+		largeContigEndMetrics
+		{
+			NoEdges   = 248, 100.0%;
+			OneEdge   = 0, 0.0%;
+			TwoEdges  = 0, 0.0%;
+			ManyEdges = 0, 0.0%;
+		}
+	}
+
+	allContigMetrics
+	{
+		numberOfContigs = 152;
+		numberOfBases   = 5483536;
+	}
+}

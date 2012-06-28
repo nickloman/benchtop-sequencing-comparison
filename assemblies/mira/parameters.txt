@@ -1,0 +1,1 @@
+--job=denovo,genome,accurate,iontor IONTOR_SETTINGS -ASSEMBLY:mrpc=100 COMMON_SETTINGS -GENERAL:not=8

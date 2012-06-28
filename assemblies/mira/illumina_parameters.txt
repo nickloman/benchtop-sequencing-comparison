@@ -1,0 +1,1 @@
+--job=denovo,genome,accurate,solexa SOLEXA_SETTINGS -GE:tismin=400:tismax=600 -ASSEMBLY:mrpc=100 COMMON_SETTINGS -GENERAL:not=8

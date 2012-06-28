@@ -1,0 +1,8 @@
+#Path	Description	Reference
+454Junior-both.sorted.bam	454 GS Junior (1+2)	280 (454 FLX+)
+454Junior-2.sorted.bam	454 GS Junior (2)	280 (454 FLX+)
+IonTorrent-both.sorted.bam	Ion Torrent (1+2)	280 (454 FLX+)
+IonTorrent-1.sorted.bam	Ion Torrent (1)	280 (454 FLX+)
+454Junior-1.sorted.bam	454 GS Junior (1)	280 (454 FLX+)
+IonTorrent-2.sorted.bam	Ion Torrent (2)	280 (454 FLX+)
+MiSeq-1_280.sorted.bam	Illumina MiSeq (280)	280 (454 FLX+)
